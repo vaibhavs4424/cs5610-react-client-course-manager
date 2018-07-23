@@ -16,7 +16,7 @@ class ModuleListItem extends Component {
     }
 
     render(){
-        return  (<li className="list-group-item">
+        return  (<li className="list-group-item list-group-item-dark">
                 <Link to= {`/course/${this.props.courseId}/module/${this.props.moduleId}`}>
                     {this.props.title}
                 </Link>

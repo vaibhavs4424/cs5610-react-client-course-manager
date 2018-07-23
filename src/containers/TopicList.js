@@ -103,9 +103,10 @@ export default class TopicList extends React.Component{
     render() {
         return (
             <div>
-                <div className="container-fluid"><br/>
+                <br/>
+                <div className="container-fluid">
 
-                    <table>
+                    <table className="table table-bordered table-dark">
                         <tr>
                             <td className="col-10"><input className="form-control" onChange={this.titleChanged} placeholder="Enter Topic"/></td>
                             <td className="col-2"><button onClick={this.createTopic} className= "btn btn-primary">
@@ -113,8 +114,9 @@ export default class TopicList extends React.Component{
                             </button>
                             </td>
                         </tr>
-                    </table><br/>
+                    </table>
 
+                    <h3>Topic List</h3>
                     <table>
                         <tr>
                             <td>

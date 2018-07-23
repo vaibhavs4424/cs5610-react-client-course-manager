@@ -70,14 +70,14 @@ render() {
     return (
 
         <div>
-            <table className="table">
+            <table className="table table-bordered table-dark">
                 <tr>
                     <td><input onChange={this.titleChanged} className="form-control" id="titleFld"
                                placeholder="WebDev"/></td>
                     <td><button onClick={this.createCourse} className="btn btn-primary fa fa-plus"></button></td>
                 </tr>
             </table>
-            <table className="table">
+            <table className="table table-bordered table-dark">
                 <thead>
                 <tr><th>Title</th>
                     <th>

@@ -97,8 +97,7 @@ export default class LessonList extends React.Component{
         return (
             <div>
                 <div className="container-fluid"><br/>
-                    {/*<h3>Lesson list for module: {this.state.moduleId}</h3>*/}
-                    <table>
+                    <table className="table table-bordered table-dark">
                         <tr>
                             <td className="col-10"><input className="form-control" onChange={this.titleChanged} placeholder="Enter Lesson"/></td>
                             <td className="col-2"><button onClick={this.createLesson} className= "btn btn-primary">
@@ -106,18 +105,14 @@ export default class LessonList extends React.Component{
                             </button>
                             </td>
                         </tr>
-                    </table><br/>
-
-                    <table>
-                        <tr>
-                            <td>
+                    </table>
+                    <h3>Lesson list</h3>
                                 <ul className="nav nav-tabs">
                                     {this.renderListOfLessons()}
                                 </ul>
-                            </td>
-                        </tr>
-                    </table>
+
                 </div>
+                <br />
             </div>
 
 

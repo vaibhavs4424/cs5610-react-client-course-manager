@@ -95,7 +95,7 @@ class ModuleList extends React.Component{
         return (
             <div className="container-fluid"><br/>
 
-                <table>
+                <table className="table table-bordered table-dark">
                     <tr>
                         <td className="col-10"> <input className="form-control"
                                                        onChange={this.titleChanged}

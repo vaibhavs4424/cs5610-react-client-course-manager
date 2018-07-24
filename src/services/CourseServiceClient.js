@@ -3,7 +3,7 @@ const COURSE_API_URL = 'http://localhost:8080/api/course';
 const COURSEID_API_URL = 'http://localhost:8080/api/course/CID';
 
 
-class CourseService{
+class CourseServiceClient{
 
     constructor(singletonToken) {
         if (_singleton !== singletonToken)
@@ -11,7 +11,7 @@ class CourseService{
     }
     static get instance() {
         if(!this[_singleton])
-            this[_singleton] = new CourseService(_singleton);
+            this[_singleton] = new CourseServiceClient(_singleton);
         return this[_singleton]
     }
 
@@ -52,4 +52,4 @@ class CourseService{
 
 }
 
-export default CourseService;
+export default CourseServiceClient;

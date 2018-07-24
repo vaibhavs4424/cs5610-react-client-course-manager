@@ -1,6 +1,6 @@
 import React,{ Component } from 'react';
 import { BrowserRouter as Router,Route} from 'react-router-dom';
-import CourseService from "../services/CourseService";
+import CourseServiceClient from "../services/CourseServiceClient";
 import ModuleList from './ModuleList';
 import ModuleEditor from './ModuleEditor';
 
@@ -23,7 +23,7 @@ class CourseEditor extends React.Component{
                 }]
             }
         };
-        this.courseService = CourseService.instance;
+        this.courseService = CourseServiceClient.instance;
         this.selectCourse = this.selectCourse.bind(this);
         this.setCourseNew = this.setCourseNew.bind(this);
         this.updateModuleIndex = this.updateModuleIndex.bind(this);

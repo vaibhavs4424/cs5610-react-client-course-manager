@@ -1,5 +1,5 @@
 import React from 'react';
-import TopicService from "../services/TopicService";
+import TopicService from "../services/TopicServiceClient";
 import TopicListItem from '../components/TopicListItem';
 
 

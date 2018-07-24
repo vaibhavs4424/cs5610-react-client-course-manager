@@ -3,7 +3,7 @@ import LessonService from "../services/LessonServiceClient";
 import LessonListItem from '../components/LessonListItem';
 
 
-export default class LessonList extends React.Component{
+export default class LessonTabs extends React.Component{
 
     constructor(props) {
         super(props);

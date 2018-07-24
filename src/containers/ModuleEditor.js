@@ -1,6 +1,6 @@
 import React from 'react';
 import ModuleServiceClient from "../services/ModuleServiceClient";
-import LessonList from './LessonList';
+import LessonTabs from './LessonTabs';
 import LessonEditor from './LessonEditor';
 import {BrowserRouter as Router,Route} from 'react-router-dom';
 
@@ -65,7 +65,7 @@ export default class ModuleEditor extends React.Component{
 
             <div className="row col-8">
 
-                <LessonList courseId={this.props.match.params.courseId} moduleId={this.props.match.params.moduleId}/>
+                <LessonTabs courseId={this.props.match.params.courseId} moduleId={this.props.match.params.moduleId}/>
 
             </div>
 

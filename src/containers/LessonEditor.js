@@ -1,6 +1,8 @@
 import React from 'react';
 import LessonServiceClient from "../services/LessonServiceClient";
 import TopicList from './TopicList';
+import WidgetEditor from './WidgetEditor';
+import { BrowserRouter as Router,Route} from 'react-router-dom';
 
 export default class LessonEditor extends React.Component{
 
@@ -67,12 +69,18 @@ export default class LessonEditor extends React.Component{
     }
 
     render() { return (
+        <Router>
             <div>
                 <h3>Lesson: {this.state.lessonTitle} </h3>
                 <div className="row">
 
                     <TopicList courseId={this.props.match.params.courseId} moduleId={this.props.match.params.moduleId} lessonId={this.props.match.params.lessonId}/>
+
+                    <Route exact path="/course/:courseId/module/:moduleId/lesson/:lessonId/topic/:topicId" component={WidgetEditor}>
+
+                    </Route>
                 </div>
             </div>
+        </Router>
     );}
 }
